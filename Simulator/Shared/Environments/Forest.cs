@@ -1,3 +1,4 @@
+using DinoSim.Shared.Dinosaurs;
 using DinoSim.Shared.Plants;
 using DinoSim.Shared.ProgramManagers;
 
@@ -8,6 +9,8 @@ public class Forest : IEnvironment
     public int DayCount { get; set; } = 0;
     public IList<IPlant> Plants { get; set; }
     
+    public IList<IDinosaur> Dinosaurs { get; set; }
+    
     private IEventLogger _eventLogger;
 
     private int _plantsToGrow = 2;
@@ -17,6 +20,7 @@ public class Forest : IEnvironment
     {
         _eventLogger = eventLogger;
         Plants = new List<IPlant>();
+        Dinosaurs = new List<IDinosaur>();
         
         SetupForest();
     }

@@ -12,6 +12,35 @@ a, .btn-link {
     color: #0071c1;
 }
 
+.plant-img {
+    height: 100px;
+}
+
+.dino {
+    margin: 7.5px;
+    border: grey 1px solid;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.dino-name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.dino-img {
+    height: 150px;
+}
+
+.dino-img-baby {
+    height: 50px;
+}
+
+.dino-list {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
@@ -99,3 +128,4 @@ a, .btn-link {
     .loading-progress-text:after {
         content: var(--blazor-load-percentage-text, "Loading");
     }
+    

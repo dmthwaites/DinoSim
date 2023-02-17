@@ -1,7 +1,10 @@
 ﻿@page "/fetchdata"
 @using DinoSim.Shared
+@using DinoSim.Shared.Dinosaurs
 @using DinoSim.Shared.ProgramManagers
+@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
 @inject HttpClient Http
+@inject IWebAssemblyHostEnvironment Environment
 
 <PageTitle>Forest Simulator</PageTitle>
 
@@ -9,12 +12,32 @@
 
 <p>This component demonstrates fetching data from the server.</p>
 
-@if (forecasts == null)
+@if (_loading)
 {
     <p><em>Loading...</em></p>
 }
 else
 {
+    @foreach (var plantGroup in _simRunner.Environment.Plants.GroupBy(_ => _.GetType().Name))
+    {
+        <div>
+            <img
+                class="plant-img"
+                src="images/plants/@(plantGroup.Key).jpg"/>
+            @(plantGroup.Key) x @plantGroup.Count()
+        </div>
+    }
+    <div class="dino-list">
+    @foreach (var dinosaur in _simRunner.Environment.Dinosaurs)
+    {
+        <div class="dino">
+            <div class="dino-name">@dinosaur.Name</div>
+            <img class="dino-img"
+                 src="@GetImage(dinosaur.Type)"/>
+        </div>
+    }
+    </div>
+    
     <button class="btn btn-primary" @onclick="RunCycle">Click me</button>
     <table class="table">
         <thead>
@@ -34,13 +57,30 @@ else
 }
 
 @code {
+    private bool _loading = true;
     private SimRunner _simRunner;
     private WeatherForecast[]? forecasts;
 
     protected override async Task OnInitializedAsync()
     {
         _simRunner = new SimRunner();
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        
+        _simRunner.Environment.Dinosaurs.Add(new DinosaurBase()
+        {
+            Name = "Gary",
+            Type = "Tyrannosaurus"
+        });
+        _simRunner.Environment.Dinosaurs.Add(new DinosaurBase()
+        {
+            Name = "Brenda",
+            Type = "Apatosaurus"
+        });
+        _simRunner.Environment.Dinosaurs.Add(new DinosaurBase()
+        {
+            Name = "Littlen",
+            Type = "Biggun"
+        });
+        _loading = false;
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -56,5 +96,36 @@ else
     private void RunCycle()
     {
         _simRunner.RunCycle();
+    }
+
+    private string GetImage(string dinoType)
+    {
+        var fileName = string.Empty;
+        switch (dinoType)
+        {
+            case "Raptor":
+                fileName = "Raptor.webp";
+                break;
+            case "Apatosaurus":
+                fileName = "Apatosaurus.webp";
+                break;
+            case "Pteranodon":
+                fileName = "Pteranodon.webp";
+                break;
+            case "Stegosaurus":
+                fileName = "Stegosaurus.webp";
+                break;
+            case "Triceratops":
+                fileName = "Triceratops.webp";
+                break;
+            case "Tyrannosaurus":
+                fileName = "Tyrannosaurus.webp";
+                break;
+            default:
+                  fileName = "default.jpg";
+                break;
+        }
+
+        return $"images/dinosaurs/{fileName}";
     }
 }
