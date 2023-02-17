@@ -1,0 +1,20 @@
+<div hidden="@(!Active)">
+    <h3>Task Three</h3>
+    <p>A dinosaur can only eat another dinosaur if it is larger than the one it is eating</p>
+    <ul>
+        <li>Each dinosaur must have a size</li>
+        <li>If it is smaller it is beaten away, if not it will eat it</li>
+        <li>Must log whether it was able to find a dinosaur or went hungry</li>
+    </ul>
+    
+    extras:
+    dinosaur starve if it can't find anything
+    plants can grow each turn
+    different types of herbivors, carnivors
+    dinosaurs can have baby dinosaurs
+</div>
+
+@code {
+    [Parameter]
+    public bool Active { get; set; }
+}
