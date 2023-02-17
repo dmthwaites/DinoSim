@@ -1,0 +1,12 @@
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/bin/Debug/net7.0/DinoSim.Shared.deps.json
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/bin/Debug/net7.0/DinoSim.Shared.dll
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/bin/Debug/net7.0/DinoSim.Shared.pdb
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/Debug/net7.0/DinoSim.Shared.csproj.AssemblyReference.cache
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/Debug/net7.0/DinoSim.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/Debug/net7.0/DinoSim.Shared.AssemblyInfoInputs.cache
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/Debug/net7.0/DinoSim.Shared.AssemblyInfo.cs
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/Debug/net7.0/DinoSim.Shared.csproj.CoreCompileInputs.cache
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/Debug/net7.0/DinoSim.Shared.dll
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/Debug/net7.0/refint/DinoSim.Shared.dll
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/Debug/net7.0/DinoSim.Shared.pdb
+/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/Debug/net7.0/ref/DinoSim.Shared.dll

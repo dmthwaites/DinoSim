@@ -1,0 +1,209 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/shotalot09/git/dinoDemo/DinoSim/Server/DinoSim.Server.csproj": {}
+  },
+  "projects": {
+    "/home/shotalot09/git/dinoDemo/DinoSim/Client/DinoSim.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shotalot09/git/dinoDemo/DinoSim/Client/DinoSim.Client.csproj",
+        "projectName": "DinoSim.Client",
+        "projectPath": "/home/shotalot09/git/dinoDemo/DinoSim/Client/DinoSim.Client.csproj",
+        "packagesPath": "/home/shotalot09/.nuget/packages/",
+        "outputPath": "/home/shotalot09/git/dinoDemo/DinoSim/Client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shotalot09/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/shotalot09/git/dinoDemo/DinoSim/Shared/DinoSim.Shared.csproj": {
+                "projectPath": "/home/shotalot09/git/dinoDemo/DinoSim/Shared/DinoSim.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[7.0.2, 7.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "/home/shotalot09/git/dinoDemo/DinoSim/Server/DinoSim.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shotalot09/git/dinoDemo/DinoSim/Server/DinoSim.Server.csproj",
+        "projectName": "DinoSim.Server",
+        "projectPath": "/home/shotalot09/git/dinoDemo/DinoSim/Server/DinoSim.Server.csproj",
+        "packagesPath": "/home/shotalot09/.nuget/packages/",
+        "outputPath": "/home/shotalot09/git/dinoDemo/DinoSim/Server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shotalot09/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/shotalot09/git/dinoDemo/DinoSim/Client/DinoSim.Client.csproj": {
+                "projectPath": "/home/shotalot09/git/dinoDemo/DinoSim/Client/DinoSim.Client.csproj"
+              },
+              "/home/shotalot09/git/dinoDemo/DinoSim/Shared/DinoSim.Shared.csproj": {
+                "projectPath": "/home/shotalot09/git/dinoDemo/DinoSim/Shared/DinoSim.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/shotalot09/git/dinoDemo/DinoSim/Shared/DinoSim.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shotalot09/git/dinoDemo/DinoSim/Shared/DinoSim.Shared.csproj",
+        "projectName": "DinoSim.Shared",
+        "projectPath": "/home/shotalot09/git/dinoDemo/DinoSim/Shared/DinoSim.Shared.csproj",
+        "packagesPath": "/home/shotalot09/.nuget/packages/",
+        "outputPath": "/home/shotalot09/git/dinoDemo/DinoSim/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shotalot09/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
