@@ -28,7 +28,7 @@ else
         </div>
     }
     <div class="dino-list">
-    @foreach (var dinosaur in _simRunner.Environment.Dinosaurs)
+    @foreach (var dinosaur in _simRunner.Environment.Dinosaurs.Where(dino => dino.IsAlive))
     {
         <div class="dino">
             <div class="dino-name">@dinosaur.Name</div>
@@ -65,21 +65,21 @@ else
     {
         _simRunner = new SimRunner();
         
-        _simRunner.Environment.Dinosaurs.Add(new DinosaurBase()
-        {
-            Name = "Gary",
-            Type = "Tyrannosaurus"
-        });
-        _simRunner.Environment.Dinosaurs.Add(new DinosaurBase()
-        {
-            Name = "Brenda",
-            Type = "Apatosaurus"
-        });
-        _simRunner.Environment.Dinosaurs.Add(new DinosaurBase()
-        {
-            Name = "Littlen",
-            Type = "Biggun"
-        });
+        // _simRunner.Environment.Dinosaurs.Add(new DinosaurBase()
+        // {
+        //     Name = "Gary",
+        //     Type = "Tyrannosaurus"
+        // });
+        // _simRunner.Environment.Dinosaurs.Add(new DinosaurBase()
+        // {
+        //     Name = "Brenda",
+        //     Type = "Apatosaurus"
+        // });
+        // _simRunner.Environment.Dinosaurs.Add(new DinosaurBase()
+        // {
+        //     Name = "Littlen",
+        //     Type = "Biggun"
+        // });
         _loading = false;
     }
 

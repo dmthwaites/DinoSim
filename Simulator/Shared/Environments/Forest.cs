@@ -8,7 +8,6 @@ public class Forest : IEnvironment
 {
     public int DayCount { get; set; } = 0;
     public IList<IPlant> Plants { get; set; }
-    
     public IList<IDinosaur> Dinosaurs { get; set; }
     
     private IEventLogger _eventLogger;
@@ -30,6 +29,10 @@ public class Forest : IEnvironment
         this.DayCount += 1;
         _eventLogger.SetDay(this.DayCount);
         _eventLogger.AddEvent($"Starting Day {DayCount}");
+        
+        this.SeedPlants();
+        this.GrowPlants();
+        this.FeedDinsosaurs();
 
         this._eventLogger.AddEvent($"There are {Plants.Count()} plants");
         this._eventLogger.AddEvent($"There are {Plants.Count(plant => plant.FullyGrown)} grown plants");
@@ -42,6 +45,39 @@ public class Forest : IEnvironment
         {
             Plants.Add(new FirTree(){FullyGrown = true});
             i++;
+        }
+        
+        Dinosaurs.Add(new Brontosaurus("Bruce", _eventLogger));
+        Dinosaurs.Add(new Brontosaurus("Steve", _eventLogger));
+        Dinosaurs.Add(new Brontosaurus("Becky", _eventLogger));
+        
+        Dinosaurs.Add(new Trex("Ricky", _eventLogger));
+    }
+    
+    private void FeedDinsosaurs()
+    {
+        foreach (var dinosaur in Dinosaurs)
+        {
+            if (!dinosaur.IsAlive) continue;
+            dinosaur.FindFood(this);
+        }
+    }
+    
+    private void SeedPlants()
+    {
+        int i = 0;
+        while (i < _plantsToGrow)
+        {
+            Plants.Add(new FirTree());
+            i++;
+        }
+    }
+
+    private void GrowPlants()
+    {
+        foreach (var plant in Plants)
+        {
+            plant.Grow();
         }
     }
 }

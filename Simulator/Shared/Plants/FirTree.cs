@@ -15,6 +15,10 @@ public class FirTree : IPlant
 
     public void Grow()
     {
-        throw new NotImplementedException();
+        _daysGrown += 1;
+        if (_daysGrown >= DaysToGrow)
+        {
+            FullyGrown = true;
+        }
     }
 }
