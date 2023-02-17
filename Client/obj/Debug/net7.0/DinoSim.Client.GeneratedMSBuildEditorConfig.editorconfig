@@ -32,6 +32,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/shotalot09/git/dinoDemo/DinoSim/Client/Pages/Instructions/Instructions.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5zdHJ1Y3Rpb25zL0luc3RydWN0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shotalot09/git/dinoDemo/DinoSim/Client/Pages/Instructions/PageOne.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5zdHJ1Y3Rpb25zL1BhZ2VPbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shotalot09/git/dinoDemo/DinoSim/Client/Pages/Instructions/PageThree.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5zdHJ1Y3Rpb25zL1BhZ2VUaHJlZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/shotalot09/git/dinoDemo/DinoSim/Client/Pages/Instructions/PageTwo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5zdHJ1Y3Rpb25zL1BhZ2VUd28ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/shotalot09/git/dinoDemo/DinoSim/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,15 @@
+<div hidden="@(!Active)">
+    <h3>Task One</h3>
+    <p>Create a dinosaur and have it eat the plants each day.</p>
+    <ul>
+        <li>Must look for plants and eat opne it can find</li>
+        <li>Plants must be consumed and not available to be eaten again the next day</li>
+        <li>Must log whether it was able to find a plant or went hungry</li>
+    </ul>
+</div>
+
+
+@code {
+    [Parameter]
+    public bool Active { get; set; }
+}

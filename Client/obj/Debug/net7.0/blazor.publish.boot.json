@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "DinoSim.Client.dll": "sha256-RkBjbVG9RX3BMKIgP\/62T9OmQLtlFbFkBrqUuOlRpFs=",
+      "DinoSim.Client.dll": "sha256-mzqwOA\/qb9K0Sts4hNB+6Pyt8TInnFQ3gnc+\/ghc\/aE=",
       "DinoSim.Shared.dll": "sha256-YIv3g6X\/fhZjaUS2hHMaHMOP6txUptPHEQ08Lf3BHQc=",
       "Microsoft.AspNetCore.Components.dll": "sha256-aRK60I2UUMZHDNE6oKyoS5Ldwo+3yM5D2+0YKNpDzCk=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-PhM7cTFqaALsiG9eLRhSpft+uK907X74wZ\/m27dzHTY=",

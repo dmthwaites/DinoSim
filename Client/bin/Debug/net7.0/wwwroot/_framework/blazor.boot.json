@@ -199,14 +199,14 @@
       "netstandard.dll": "sha256-p32h5P3QmHJ\/FGoeE6m7f5g\/8ng2PSPGZktHyMadvIs=",
       "System.Private.CoreLib.dll": "sha256-6MwQcyKbqBsoZYOcD9fQJ4iKcn1qMmWRWVEkU2LLCb0=",
       "DinoSim.Shared.dll": "sha256-YIv3g6X\/fhZjaUS2hHMaHMOP6txUptPHEQ08Lf3BHQc=",
-      "DinoSim.Client.dll": "sha256-RkBjbVG9RX3BMKIgP\/62T9OmQLtlFbFkBrqUuOlRpFs="
+      "DinoSim.Client.dll": "sha256-mzqwOA\/qb9K0Sts4hNB+6Pyt8TInnFQ3gnc+\/ghc\/aE="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "DinoSim.Shared.pdb": "sha256-gvFdktnzAecmA8buTmwmEOfsEKwlxrT3mQlHcKgNf70=",
-      "DinoSim.Client.pdb": "sha256-bt8WIFS+OvdG010V980FtcURb+bzDrQimyEtZJc\/9Kc="
+      "DinoSim.Client.pdb": "sha256-fpy9A8nid+zevSTNxMxoX5AmF1N\/YXpdzDeJ3cXVtBA="
     },
     "runtime": {
       "dotnet.7.0.2.0kkq381hnh.js": "sha256-4mh03qTse0uNR+dQ6ydExm4jJXph0RE8zGNCtF0jiNA=",
