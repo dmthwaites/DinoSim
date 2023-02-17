@@ -26,10 +26,7 @@ public class Forest : IEnvironment
         this.DayCount += 1;
         _eventLogger.SetDay(this.DayCount);
         _eventLogger.AddEvent($"Starting Day {DayCount}");
-        
-        this.SeedPlants();
-        this.GrowPlants();
-        
+
         this._eventLogger.AddEvent($"There are {Plants.Count()} plants");
         this._eventLogger.AddEvent($"There are {Plants.Count(plant => plant.FullyGrown)} grown plants");
     }
@@ -41,24 +38,6 @@ public class Forest : IEnvironment
         {
             Plants.Add(new FirTree(){FullyGrown = true});
             i++;
-        }
-    }
-
-    private void SeedPlants()
-    {
-        int i = 0;
-        while (i < _plantsToGrow)
-        {
-            Plants.Add(new FirTree());
-            i++;
-        }
-    }
-
-    private void GrowPlants()
-    {
-        foreach (var plant in Plants)
-        {
-            plant.Grow();
         }
     }
 }
