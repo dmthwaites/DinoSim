@@ -1,0 +1,60 @@
+﻿@page "/fetchdata"
+@using DinoSim.Shared
+@using DinoSim.Shared.ProgramManagers
+@inject HttpClient Http
+
+<PageTitle>Forest Simulator</PageTitle>
+
+<h1>Forest</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <button class="btn btn-primary" @onclick="RunCycle">Click me</button>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Log</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var eventText in _simRunner.EventLogger.Events.Reverse())
+        {
+            <tr>
+                <td>@eventText</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private SimRunner _simRunner;
+    private WeatherForecast[]? forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _simRunner = new SimRunner();
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+
+        // if (firstRender)
+        // {
+        //     await _simRunner.Run(10);
+        // }
+    }
+
+    private void RunCycle()
+    {
+        _simRunner.RunCycle();
+    }
+}
