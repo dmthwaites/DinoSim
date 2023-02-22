@@ -1,0 +1,26 @@
+<div class="instruction-drop-down">
+    <button class="btn btn-secondary" onclick="@ToggleVisibility">@ButtonText</button>
+    <div class="hidden-section" hidden="@(!Active)">
+        <h3 class="task-title">@Title</h3>
+        @ChildContent
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    
+    [Parameter]
+    public string Title { get; set; }
+    
+    [Parameter]
+    public string ButtonText { get; set; }
+    
+    [Parameter]
+    public bool Active { get; set; }
+
+    private void ToggleVisibility()
+    {
+        Active = !Active;
+    }
+}

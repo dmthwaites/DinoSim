@@ -1,10 +1,76 @@
 <h2>Instructions</h2>
-<PageOne Active="@pageOneActive"/>
-<PageTwo Active="@pageTwoActive"/>
-<PageThree Active="@pageThreeActive"/>
+@* <PageOne Active="@pageOneActive"/> *@
+@* <PageTwo Active="@pageTwoActive"/> *@
+@* <PageThree Active="@pageThreeActive"/> *@
+<InstructionPage ButtonText="Task 1" Title="Grow the trees" Active="false">
+    <p>Plant new trees each cycle, and grow existing ones each time</p>
+    <ul>
+        <li>Must grow all existing trees</li>
+        <li>Must plant new trees to increase the size of the forest</li>
+    </ul>
+</InstructionPage>
 
-<button class="btn btn-primary" @onclick="Previous">Previous</button>
-<button class="btn btn-primary" @onclick="Next">Next</button>
+<InstructionPage ButtonText="Task 2" Title="Create Dinosaurs" Active="false">
+    <p>Create a dinosaur and have it eat the plants each day.</p>
+    <ul>
+        <li>Must look for plants and eat one it can find</li>
+        <li>Plants must be consumed and not available to be eaten again the next day</li>
+        <li>Must log whether it was able to find a plant or went hungry</li>
+    </ul>
+</InstructionPage>
+
+<InstructionPage ButtonText="Task 3" Title="Create MORE Dinosaurs" Active="false">
+    <p>Create a carnivour that is able to eat other dinosaurs</p>
+            <ul>
+                <li>Must look for dinosaurs and eat one it can find</li>
+                <li>If a dinosaur is eaten it must die and not eat plants again the next day</li>
+                <li>Must log whether it was able to find a dinosaur or went hungry</li>
+            </ul>
+</InstructionPage>
+
+<InstructionPage ButtonText="Task 4" Title="Let them Fight!" Active="false">
+    <p>A dinosaur can only eat another dinosaur if it is larger than the one it is eating</p>
+    <ul>
+        <li>Each dinosaur must have a size</li>
+        <li>If it is smaller it is beaten away, if not it will eat it</li>
+        <li>Must log whether it was able to find a dinosaur or went hungry</li>
+    </ul>
+</InstructionPage>
+
+<InstructionPage ButtonText="Task 5" Title="It's just a Baby" Active="false">
+    <p>If there are two of the same dinosaur they can have a change of having a baby dinosaur</p>
+    <ul>
+        <li>Will need a way to still if a dinosaur is a baby or adult</li>
+        <li>Will need to check dinosaurs for specific types</li>
+        <li>Must log who the parents are</li>
+        <li>Must be a random chance</li>
+        <li>Must be able to grow into an adult dinosaur over the cycles</li>
+    </ul>
+</InstructionPage>
+
+<InstructionPage ButtonText="Task 6" Title="Soooo Hungry" Active="false">
+    <p>If a dinosaur hasn't eaten it will die</p>
+    <ul>
+        <li>Will need to check whether the dinosaur has been able to eat something or not</li>
+        <li>Will need to check how they die, instantly if they haven't or losing health over time</li>
+        <li>A dinosaur that has died or been eaten can not then be eaten by another dinosaur</li>
+    </ul>
+</InstructionPage>
+
+<InstructionPage ButtonText="Task 7" Title="Unleash the Wilds!" Active="false">
+    <p>Create a random number of dinosaurs each session to give some randomness to the simulation</p>
+    <ul>
+        <li>Will need to create a random number of herbivores and carnivours each session</li>
+        <li>Must test to make sure the UI doesn't look silly with so many dinosaurs</li>
+    </ul>
+</InstructionPage>
+
+<InstructionPage ButtonText="Task 8" Title="Create MORE more dinosaurs" Active="false">
+    <p>Create 3 types of herbivores and 3 types of carnivour, each with different sizes and amounts of food they need</p>
+</InstructionPage>
+
+@* <button class="btn btn-primary" @onclick="Previous">Previous</button> *@
+@* <button class="btn btn-primary" @onclick="Next">Next</button> *@
 
 @code {
     private int currentPage = 1;
