@@ -1,0 +1,31 @@
+#Task 1 
+- Plant new trees each cycle
+- Grow trees each time
+#Points
+- Create object
+- Manipulate list
+- Add and call method
+- Objects
+
+#Task 2
+- Create a dinosaur and have it eat the plants each day
+- Just look for plants and eat opne it can find
+- Plants must be consumed and not available to be eaten again the next day
+- Must log whether it was able to find a plant or went hungry
+#Points
+- Adding new object
+- Planning what behaviour it needs each day
+- Constructors
+- Interaction between objects
+
+#Task 3
+- Create a carnivour that is able to eat other dinosaurs
+- Must look for dinosaurs and eat one it can find
+- If a dinosaur is eaten it must die and not eat plants again the next day
+- Must log whether it was able to find a dinosaur or went hungry
+#Points
+- Addng new object
+- Interface for dinosaurs
+- Base classes
+- Overload, method doing different things
+

@@ -41,6 +41,17 @@ a, .btn-link {
     padding-bottom: 50px;
 }
 
+.instruction-drop-down {
+    border-top: green 3px solid;
+    margin-bottom: 7px;
+    padding-top: 5px;
+}
+
+.task-title {
+    margin-top: 10px;
+}
+
+
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
